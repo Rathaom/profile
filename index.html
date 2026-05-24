@@ -63,7 +63,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 24px 0 24px;
         }
 
         section {
@@ -381,7 +381,25 @@
             font-weight: 700;
             position: relative;
             z-index: 2;
+            overflow: hidden;  
         }
+        .avatar-placeholder img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo-circle {
+            
+            overflow: hidden;  
+        }
+        .logo-circle img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+
 
         .glowing-ring {
             position: absolute;
@@ -920,7 +938,7 @@
     <!-- 2. STICKY NAVIGATION -->
     <header class="nav-wrapper" id="navbar">
         <div class="container nav-container">
-            <div class="logo-circle">RO</div>
+            <div class="logo-circle"><img src="profile.jpeg" alt=""></div>
             <nav>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#about" onclick="closeMenu()">About</a></li>
@@ -965,7 +983,7 @@
         <div class="about-split fade-in">
             <div class="about-visual">
                 <div class="glowing-ring"></div>
-                <div class="avatar-placeholder">RO</div>
+                <div class="avatar-placeholder"><img src="profile.jpeg" alt="" /></div>
                 <div class="bank-badge">🏦</div>
             </div>
             <div class="about-content">
@@ -979,15 +997,15 @@
                 
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <div class="stat-num"><span class="counter" data-target="7">0</span>+</div>
+                        <div class="stat-num"><span class="counter" data-target="7">7</span>+</div>
                         <div class="stat-label">Years Experience</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-num"><span class="counter" data-target="2">0</span></div>
+                        <div class="stat-num"><span class="counter" data-target="2">2</span></div>
                         <div class="stat-label">Companies</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-num"><span class="counter" data-target="29">0</span></div>
+                        <div class="stat-num"><span class="counter" data-target="29">7</span></div>
                         <div class="stat-label">Skills Endorsed</div>
                     </div>
                 </div>
